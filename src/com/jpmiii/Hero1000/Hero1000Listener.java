@@ -17,9 +17,6 @@ public class Hero1000Listener implements Listener {
 	@EventHandler(priority = EventPriority.HIGH)
 	public void normalLogin(PlayerLoginEvent event) {
 
-
-
-
 	}
 
 }

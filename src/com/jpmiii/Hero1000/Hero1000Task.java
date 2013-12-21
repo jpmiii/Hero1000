@@ -13,7 +13,6 @@ public class Hero1000Task extends BukkitRunnable {
 	}
 
 	public void run() {
-	
+
 	}
 }
-
