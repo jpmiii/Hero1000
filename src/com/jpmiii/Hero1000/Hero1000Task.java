@@ -1,5 +1,6 @@
 package com.jpmiii.Hero1000;
 
+//import org.bukkit.entity.Player;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
@@ -13,6 +14,14 @@ public class Hero1000Task extends BukkitRunnable {
 	}
 
 	public void run() {
+		for (Player ply : plugin.getServer()
+				.getWorld("newworld")
+				.getPlayers()) {
+			if (plugin.perms.has(ply, "hero.follow") && !ply.hasMetadata("NPC")){
+				plugin.getLogger().info(ply.getDisplayName() + ply.getLocation().toString());
+			}
+			
+		}
 
 	}
 }
